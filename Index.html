@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎯 Interactive Web Page</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <section>
+    <button id="themeToggle">Toggle Dark Mode</button>
+  </section>
+
+  <!-- Counter Game -->
+  <section>
+    <h2>Counter Game</h2>
+    <p>Count: <span id="counter">0</span></p>
+    <button id="increaseBtn">Increase</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section>
+    <h2>FAQ</h2>
+    <div class="faq">
+      <h3 class="question">What is JavaScript? <span>+</span></h3>
+      <p class="answer">JavaScript is a programming language for creating dynamic web pages.</p>
+    </div>
+    <div class="faq">
+      <h3 class="question">What is DOM manipulation? <span>+</span></h3>
+      <p class="answer">DOM manipulation allows developers to change HTML content dynamically.</p>
+    </div>
+  </section>
+
+  <!-- Custom Form -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label>Name:</label>
+      <input type="text" id="name" placeholder="Enter name">
+      <small class="error" id="nameError"></small>
+
+      <label>Email:</label>
+      <input type="text" id="email" placeholder="Enter email">
+      <small class="error" id="emailError"></small>
+
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="Enter password">
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
